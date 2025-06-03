@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kapis",
+  "info": {
+    "singularName": "kapi",
+    "pluralName": "kapis",
+    "displayName": "kapi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "LooksBetter": {
+      "type": "boolean",
+      "default": true
+    },
+    "details": {
+      "type": "blocks"
+    },
+    "Cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
